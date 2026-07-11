@@ -16,7 +16,7 @@ body {
 
 /* NAVBAR / HEADER */
 header {
-  width: 50%;
+  width: 90%;
   padding: 0.7rem 0rem;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ header {
 }
 
 .nav-list a {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
@@ -46,14 +46,45 @@ header {
 }
 
 .main-logo {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  header {
+    width: 80%;
+  }
+
+  .nav-list a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    width: 70%;
+  }
+
+  .nav-list a {
+    font-size: 1.1rem;
+  }
+
+  .main-logo {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  header {
+    width: 50%;
+  }
 }
 
 header div {
   height: 0.2rem;
   background-color: black;
 }
+/* NAVBAR / HEADER END*/
 
 /* MAIN PAGE */
 .main-page {
@@ -326,3 +357,93 @@ footer {
     height: auto;
   }
 }
+
+/* PAGE ABOUT */
+
+/* PAGE ABOUT END*/
+
+/* PAGE COMMIT */
+.author-content {
+  width: 80%;
+  margin: 1rem 2rem;
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.logo-and-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo-and-text img {
+  width: 40%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.logo-and-text button {
+  font-family: monospace;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.logo-and-text button a {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-decoration: underline white;
+  color: white;
+}
+
+.author-text-content {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.author-content h2 {
+  font-size: 1.2rem;
+}
+
+.author-content p {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .author-content {
+    width: 50%;
+    margin: 0rem;
+  }
+
+  .logo-and-text img {
+    width: 30%;
+  }
+
+  .logo-and-text button a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .author-content {
+    width: 40%;
+    margin-top: 4rem;
+  }
+
+  .author-text-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .author-text-content p {
+    font-size: 0.9rem;
+  }
+}
+/* PAGE COMMIT END*/
