@@ -1,4 +1,4 @@
-# 📝 WriteDwm - Write-down your schedule
+# 📝 WriteDwn - Write-down your schedule
 WriteDwn is a simple todo-list=website 🗒️ that help you track & manage your task, no internet 🌐, no login 🔐, -everything is stored on your computer
 
 ---
